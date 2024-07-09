@@ -1,0 +1,720 @@
+tools browser:
+- React dev tools
+- Redux dev tools
+
+==
+** Build app vite + reactjs + react router + tailwincss 
+
++ shadcn-uibootrap + react bootrap
+
+
+npm create vite@latest quiz-test
+
+yarn create vite
+
+==
+npx create-react-app chartStock --template typescript
+
+npx create-react-app dropdown-menu
+
+npm i @syncfusion/ej2-react-charts
+
+==
+npm i react-scripts
+
+npm i apexcharts react-apexcharts axios jwt-decode moment react-hot-toast react-icons 
+npm i @reduxjs/toolkit react-redux react-spinners react-window redux-thunk socket.io-client
+
+npm i @reduxjs/toolkit react-redux react-router-dom axios 
+npm i react-hot-toast react-icons react-spinners socket.io-client
+npm i react-multi-carousel react-range react-rating
+npm i stripe
+
+npm i express bcrypt body-parser cloudinary cookie-parser cors dotenv 
+npm i formidable 
+npm i jsonwebtoken 
+npm i moment socket.io stripe uuid
+
+npm i mongoose
+
+npm i nodemon -D 
+
+
+
+====
+npm i react-table react-table-sticky
+
+
+--Mock data
+
+https://www.mockaroo.com/
+
+===
+--SSH
+git init
+
+git remote add oanhvlt git@github.com:oanhvlt/trello-mui-js.git
+git remote -v 
+
+git status
+
+git add .
+
+git commit -m "Initial project"
+
+git push oanhvlt master
+
+=== create ssh-key
+	-1. cmd: ~/Desktop : ssh-keygen >> enter >> enter >> enter
+	-2. get public key: 
+		cd c:/
+		cat Users/TOSHIBA/.ssh/id_ed25519.pub
+	- 3. Vào github >> setting >> pass ssh-key vào
+
+--https
+
+git init
+
+git remote add origin https://github.com/oanhvlt/trello-mui-js.git
+git remote -v 
+
+git status
+
+git add .
+
+git commit -m "Initial project"
+
+git push origin master
+
+--delete old remote
+git remote rm origin
+
+==
+
+** check out branch to dev new code:
+>> check status;
+git status
+>> create branch 'update_eslint':
+git checkout -b update_eslint
+
+>> dev ...
+
+>> commit code to branch 'update_eslint':
+git add .
+git remote -v 
+git commit -m "update esline rules"
+git push oanhvle update_eslint  
+
+>> go to respository on github >> review commit, merge pull request into master branch, delete branch 'update_eslint'
+
+>> go to vscode >> get new code to master:
+
+git checkout master
+
+git pull oanhvlt master
+
+>> delete branch 'update_eslint' on vscode 
+- check branch:
+git branch
+- delete branch:
+git branch -D update_eslint
+-view log:
+git log --oneline -n5
+
+
+** Update commit
+
+git add .
+git commit --amend
+
+>> gõ ":wq" (mac), 
+
+
+
+==
+0.1. update package.json
+"dev": "vite --host",
+js: "build": "vite build --base=./",
+ts: "build": "tsc && vite build --base=./",
+
+-
+or: update vite.config.js
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react-swc'
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  base: './'
+})
+
+===
+
+0.2. Sematic vesioning
+
+0.3. Update React
+- yarn remove react
+- yarn add react@^18.2.0
+
+^18.2.0 => khi npm i sẽ cập nhật version minor (số thứ 2)
+~18.2.0 => khi npm i sẽ cập nhật version patches (số thứ 3)
+
+===
+0.4. eslint
+
+
+
+===
+
+1. Edit tsconfig.json/tsconfig.app.json file
+	{
+	  "compilerOptions": {
+		// ...
+		"baseUrl": ".",
+		"paths": {
+		    "@/*": [
+				"./src/*"
+			],
+			"@/components/*": [
+				"./src/components/*"
+			],
+			"@/pages/*": [
+				"./src/pages/*"
+			],
+			"@/utils/*": [
+				"./src/utils/*"
+			]
+		}
+	  }
+	}
+2. Update vite.config.ts
+
+npm i -D @types/node
+yarn add --dev @types/node
+
+	import path from "path"
+	import react from "@vitejs/plugin-react"
+	import { defineConfig } from "vite"
+
+	export default defineConfig({
+	  plugins: [react()],
+	  resolve: {
+		alias: {
+		  "@": path.resolve(__dirname, "./src"),
+		},
+	  },
+	  server: {
+		port: 3001 // change here
+	  },
+	})
+========
+
+3. UI
+
+3.1.tailwindcss
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+or:
+npm install -D tailwindcss  (for npx create-react-app my-project)
+npx tailwindcss init
+
+- tailwind.config:
+	module.exports = {
+	  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
+	   theme: {
+		extend: {
+		  fontFamily: {
+			'Roboto': ['Roboto', 'sans-serif'],
+		  },
+    },
+  },
+	  plugins: [],
+	}
+- In src/index.css, add:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+==============
+3.2. shadcn-ui
+- Run the shadcn-ui init
+
+npx shadcn-ui@latest init
+
+√ Would you like to use TypeScript (recommended)? ... no / yes
+√ Which style would you like to use? » Default
+√ Which color would you like to use as base color? » Slate
+√ Where is your global CSS file? ... src/index.css
+√ Would you like to use CSS variables for colors? ... no / yes
+√ Are you using a custom tailwind prefix eg. tw-? (Leave blank if not) ...
+√ Where is your tailwind.config.js located? ... tailwind.config.js
+√ Configure the import alias for components: ... src/components
+√ Configure the import alias for utils: ... @/lib/utils
+√ Are you using React Server Components? ... no / yes
+√ Write configuration to components.json. Proceed? ... yes
+
+>> Move lib/utils to inside folder src/, delete folder @
+
+>> add a component like this:
+npx shadcn-ui@latest add button
+
+=> auto generate component button inside ..src/components/ui/button
+
+- use component button like this:
+
+	import { Button } from '@/components/ui/button'
+	function App() {
+	  return (
+		<>
+		  <Button>Click</Button>
+		</>
+	  )
+	}
+
+	export default App
+
+=====
+3.3. bootrap + react bootrap
+
+npm i react-bootstrap bootstrap
+npm i -D @types/react-bootstrap
+
+
+
+https://react-bootstrap.netlify.app/docs/getting-started/introduction
+
+- use bootstrap css: import into file 'main.tsx'
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+===
+3.4. icon
+-- react-icons
+https://react-icons.github.io/react-icons/search/#q=search
+
+
+-- lucide-react
+npm i lucide-react
+import { Menu } from "lucide-react";
+-- Mui
+npm install @mui/icons-material
+
+===
+3.5. Mui
+
+- 3.5.1. CSS baseline
+>> main.tsx
+import CssBaseline from '@mui/material/CssBaseline'
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <CssBaseline />
+    <App />
+  </React.StrictMode>,
+)
+- 3.5.2. mui theme: to customize style
+theme.ts:
+
+import { experimental_extendTheme as extendTheme } from '@mui/material/styles'
+// A custom theme for this app
+const theme = extendTheme({
+    colorSchemes: {
+        light: {
+            palette: {
+                primary: {
+                    main: '#17926d',
+                }
+            }
+        },
+        dark: {
+            palette: {
+                primary: {
+                    main: '#fff',
+                },
+            }
+        }
+    }
+    // ...other properties
+})
+
+export default theme
+
+>> update theme.ts for Dark mode:
+
+
+https://github.com/mui/material-ui/issues/32049#issuecomment-1173228039
+
+-system ready to use
+
+https://v5-0-6.mui.com/system/basics/
+
+-custom
+https://mui.com/material-ui/customization/how-to-customize/
+-State classes
+-styled()
+-GlobalStyles 
+const inputGlobalStyles = <GlobalStyles styles={...} />;
+
+ function Input(props) {
+   return (
+     <React.Fragment>
+      <GlobalStyles styles={...} />
+      {inputGlobalStyles}
+       <input {...props} />
+     </React.Fragment>
+   )
+ }
+
+
+- custom CSS classes 
+https://mui.com/material-ui/api/outlined-input/
+
+--- Remove border component
+
+sx={{
+	"& fieldset": {
+		border: "none",
+	},
+}}
+--- Remove icon arrow component select
+const NoDropdownIcon = () => null;
+IconComponent={NoDropdownIcon}
+
+--- show selected value custom 
+renderValue={renderIcon}
+				
+interface ModeOption {
+	value: string;
+	label: string;
+	icon: React.ReactNode;
+}
+const modeOptions: ModeOption[] = [
+	{ value: 'light', label: 'Light', icon: <LightModeIcon fontSize="small" /> },
+	{ value: 'dark', label: 'Dark', icon: <DarkModeIcon fontSize="small" /> },
+	{ value: 'system', label: 'System', icon: <SystemModeIcon fontSize="small" /> },
+];
+const renderIcon = (value: string) => {
+	const selectedOption = modeOptions.find(option => option.value === value);
+	return selectedOption ? selectedOption.icon : null;
+};
+
+====
+
+3.6. Font
+- fortawesome
+npm install @fortawesome/fontawesome-free
+- heroicons
+mpm i @material-tailwind/react @heroicons/react
+
+===
+** Google font
+get font:
+https://fonts.google.com/
+>> search Roboto >> get font >> emmbed >> copy tags
+
+>> file index.html, add:
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+----
+>> index.css, add:
+- use tailwincss:
+@layer base {
+    body{
+      @apply font-Roboto
+    }
+}
+
+- Not use tailwincss:
+:root {
+ 
+}
+
+
+----
+
+3.7. scss
+
+npm install -D sass
+
+npm install node-sass
+
+
+3.8. use image SVG
+
+npm i vite-plugin-svgr
+
+>> go to vite.config.ts:
+
+
+ >> use:
+import { ReactComponent as Logo } from '@/assets/logo.svg'
+
+
+
+
+==============
+
+4. Eslint
+
+
+
+6. React router 
+https://reactrouter.com/en/main/start/overview
+
+npm i react-router-dom
+
+7. Redux: 
+
+npm i redux react-redux
+
+or:
+
+npm i @reduxjs/toolkit react-redux
+
+8. main.ts
+
+import ReactDOM from 'react-dom/client'
+import App from './App.tsx'
+import './index.css'
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import store from './redux/store';
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>
+  
+9. // src/App.tsx
+
+import React from 'react';
+import { Routes, Route, Outlet, Navigate } from 'react-router-dom';
+import Header from './components/Header/Header.tsx';
+
+const App: React.FC = () => {
+  return (
+    <div className="flex flex-col h-screen">
+      <Header />
+      <div className="flex flex-1">
+        <Outlet />
+      </div>
+    </div>
+  );
+}
+
+const AppRoutes: React.FC = () => {
+  return (
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route index element={<Navigate to="/home" />} />
+      </Route>
+    </Routes>
+  );
+}
+
+export default AppRoutes;
+
+10. Auth0
+npm i @auth0/auth0-react
+
+
+11. Format currency
+Intl api : intl.numberformat api
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat
+
+
+12. lodash
+debounce function
+npm i lodash.debounce
+
+
+13. login with facebook: use passport https://www.passportjs.org/packages/passport-facebook/
+13.1. get App Id - App secret
+
+13.2 copy into .env of Backend
+App Id - 
+App secret
+app-redirect-login
+
+13.3. Tại https://developers.facebook.com/
+Vào App Setting >> Basic
+>> Website: Site Url
+paste url direct vào 
+
+13.4 vào  https://www.passportjs.org/packages/passport-facebook/, copy:
+//FacebookController.js
+
+passport.use(new FacebookStrategy({
+    clientID: FACEBOOK_APP_ID,
+    clientSecret: FACEBOOK_APP_SECRET,
+    callbackURL: "http://localhost:3000/auth/facebook/callback"
+  },
+  function(accessToken, refreshToken, profile, cb) {
+    User.findOrCreate({ facebookId: profile.id }, function (err, user) {
+      return cb(err, user);
+    });
+  }
+));
+
+
+
+
+
+
+
+
+
+
+
+
+===
+
+1. dropdown:
+- change mode:
+https://www.youtube.com/watch?v=nS-kXNmB4Gg
+
+- hover dropdown;
+
+https://www.youtube.com/watch?v=T2MhVxJxsL0
+
+https://www.youtube.com/watch?v=HE8jtK4FSZY&pp=ygVWZ3JvdXAgbmF2aWdhdGlvbiBidXR0b25zIHRvIGRyb3Bkb3duIGJ1dHRvbiB3aGVuIHpvb21pbmcgb3V0IHRvIHRoZSBzbWFsbCBzY3JlZW4gcmVhY3Q%3D
+
+https://www.youtube.com/watch?v=WQJeaQyA5NM&pp=ygVWZ3JvdXAgbmF2aWdhdGlvbiBidXR0b25zIHRvIGRyb3Bkb3duIGJ1dHRvbiB3aGVuIHpvb21pbmcgb3V0IHRvIHRoZSBzbWFsbCBzY3JlZW4gcmVhY3Q%3D
+
+2. table
+- tanstack table
+
+https://www.youtube.com/watch?v=CjqG277Hmgg
+
+- table bitcoin, show color red, green price
+https://www.youtube.com/watch?v=JPlVb3t6kx8&t=413s
+
+https://www.youtube.com/watch?v=MIhQZxboUBA&t=558s
+
+https://www.youtube.com/watch?v=1kCPqLQcOKo&t=194s
+
+https://www.youtube.com/watch?v=kub1Aqb7VZs
+
+
+
+- fix header (scroll vertical)
+https://www.youtube.com/watch?v=uMtyxRSqxIk
+
+https://www.youtube.com/watch?v=3oHUtG0cjfY
+
+https://www.youtube.com/watch?v=-1vvqwqxnVA
+
+- fix column and scroll horizontal
+
+https://www.youtube.com/watch?v=YgNHon2oKcg&list=PLC3y8-rFHvwgWTSrDiwmUsl4ZvipOw9Cz&index=17
+
+
+- resize column 
+
+https://www.youtube.com/watch?v=U8EuzngHjPE
+src:  react-table-8-master
+
+
+3. socket.io chart
+
+https://www.youtube.com/watch?v=cmDna276eCo
+
+4. stock chart 
+https://www.youtube.com/watch?v=MIhQZxboUBA&t=450s
+
+https://www.youtube.com/watch?v=TDn8RhG20nA&list=PLJN4kg0Hkqi2fu6ifNAkw9TLwTOH-e0-K
+
+https://www.youtube.com/watch?v=ZpfseYy5Hxg
+
+** candle 
+
+https://www.youtube.com/watch?v=LdTuxkJFfJI
+
+
+https://www.youtube.com/watch?v=LseZoGe_W-4
+
+https://www.youtube.com/watch?v=0IaaTGQWadc
+
+
+
+5. stock card (info and chart)
+
+https://www.youtube.com/watch?v=fq7k_gVV5x8&t=3895s
+
+6. header
+- change mode
+https://www.youtube.com/watch?v=yKV1IGahXqA&t=163s
+
+- notification, message
+https://www.youtube.com/watch?v=j0F0l_bvAyU
+
+
+
+7. Multi Language
+
+https://www.youtube.com/watch?v=dltHi9GWMIo
+
+- i18next
+
+https://www.youtube.com/watch?v=TlHk11Eftow
+
+8. React Infinite Scroll Component
+
+https://www.youtube.com/watch?v=31icbDtaO-k
+
+9. Row Expanding/Collapse
+https://www.youtube.com/watch?v=MGNUsxNbiJ8
+
+10. choose show/hide column
+
+- tanstack
+https://www.youtube.com/watch?v=Jgr8JjYOJsU
+
+11. realtime price crypto
+https://www.youtube.com/watch?v=bBqytMjLpoU
+
+https://www.youtube.com/watch?v=5alEc5KuyKg&t=13s
+
+
+
+12. login facebook
+
+https://www.youtube.com/watch?v=8m1M3AW5bBE
+
+npm i --save reactjs-social-login
+
+
+13. login google
+
+https://www.youtube.com/watch?v=UUJfTsn6S_Y
+
+
+14. customize react scollbar
+https://www.youtube.com/watch?v=7GO4P0ewVfI
+
+https://www.youtube.com/watch?v=JBbFbkXdtQo
+
+
+https://www.youtube.com/watch?v=QzW03hyw_bU
+
+======
+
+stock app
+https://www.youtube.com/watch?v=8CSZXXizWWA&list=PL_kr51suci7WkVde-b09G4XHEWQrmzcpJ&index=1&t=2s
+
+
+
+
+
+
+
+
+

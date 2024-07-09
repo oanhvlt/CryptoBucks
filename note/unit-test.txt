@@ -1,0 +1,88 @@
+1. project Vite
+
+==
+doc:
+- Testing Library Queries
+getByRole, queryByRole, getAllByRole, queryAllByRole, findByRole, findAllByRole
+
+https://testing-library.com/docs/queries
+
+- testing library jest dom
+https://github.com/testing-library/jest-dom
+>> Custom matchers
+
+toBeDisabled
+toBeEnabled
+toBeEmptyDOMElement
+toBeInTheDocument
+toBeInvalid
+toBeRequired
+toBeValid
+toBeVisible
+toContainElement
+toContainHTML
+....
+
+1.1. install
+npm i -D vitest 
+npm i -D @testing-library/react @testing-library/jest-dom
+run DOM emulation:
+npm i -D jsdom 
+
+** using by import these in file Greet.test.tsx
+
+import { it, expect, describe } from "vitest";
+import { render, screen } from "@testing-library/react";
+import Greet from "../../components/Greet";
+import '@testing-library/jest-dom/vitest'
+
+describe('Greet', () => {
+	it('should render a Hello message with the name when name is provided', () => {
+		render(
+			<Greet name="John" />
+		)
+		const heading = screen.getByRole('heading')
+		expect(heading).toBeInTheDocument()
+		expect(heading).toHaveTextContent(/john/i) // explain: /.../i is a regex to match case-insensitive
+	});
+	it('should render login button when name is not provided', () => {
+		render(
+			<Greet />
+		)
+		screen.debug()
+		const button = screen.getByRole('button')
+		expect(button).toBeInTheDocument()
+		expect(button).toHaveTextContent(/login/i) // explain: /.../i is a regex to match case-insensitive
+	});
+})
+
+1.2. setup
+** To use it, expect, describe, instead of import file: //import { it, expect, describe } from "vitest";
+
+- package.json
+"scripts": {
+...
+"test": "vitest",
+"test:ui": "vitest --ui"
+},
+
+- create vitest.config.ts
+
+import { defineConfig } from 'vitest/config'
+
+export default defineConfig({
+	test: {
+		environment: 'jsdom',
+		globals: true
+	}
+})
+
+- tsconfig.json, add on "compilerOptions": {}
+
+"compilerOptions": {
+	...
+	"types": [
+      "vitest/globals"
+    ]
+
+}

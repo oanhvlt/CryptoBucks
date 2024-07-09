@@ -1,0 +1,1202 @@
+Fancy Multi Select
+
+Backend: Typescript/Javascript (Language) + Next.js + Supabase; 
+Frontend: Typescript + React + Tailwind)
+
+
+$border: #ddd; #ccc
+$bg-gray: #f0f2f5;
+$lightgray: #eeeeee;
+$secondary-gray: #5a6268; 
+$third-gray: #999
+$lightyellow: #ffe073;
+$maincolor:#c0596f;
+$maincolorhover: #d4657d;
+darkgray: #595959
+
+
+react:
+https://hoidanit.vn/khoa-hoc
+
+react ultimate
+https://www.youtube.com/playlist?list=PLncHg6Kn2JT7QbvdNNAmQZLqWchnJEoH5
+
+redux ultimate:
+https://www.youtube.com/playlist?list=PLncHg6Kn2JT6t7UN1nB-BUD43xT_tROrJ
+
+SERN:
+https://www.youtube.com/playlist?list=PLncHg6Kn2JT6E38Z3kit9Hnif1xC_9VqI
+
+SSO:
+https://www.youtube.com/playlist?list=PLncHg6Kn2JT7_nB9KyLApsvNPvUI2-3vq
+
+ums:
+https://www.youtube.com/playlist?list=PLncHg6Kn2JT4f7JzEIf6hrfNXyJggpSDB
+
+
+JWT- react hook
+https://www.youtube.com/watch?v=-cg9dq-Jq2M&list=PLncHg6Kn2JT7vOvooGw-yXcj6MHKrOpTZ&pp=iAQB
+
+
+===
+
+React TypeScript:
+
+https://hoidanit.vn/khoa-hoc/react-pro-typescript-thuc-hanh-du-an-portfolio
+
+nestjs: blog
+https://www.youtube.com/watch?v=XIGx1sfvRoc&list=PLncHg6Kn2JT6zw4JiFOE1z90ghnyrFl5B
+
+===============
+
+NEXT.JS:
+
+ecommerce:
+
+https://www.youtube.com/watch?v=KY1t_AvyD-0
+
+
+https://www.youtube.com/watch?v=SR4dFgdKUyI
+
+
+=====
+
+https://www.youtube.com/watch?v=OarGSbe6te8
+
+https://www.youtube.com/watch?v=0OaDyjB9Ib8
+
+next.js - soundcloud 999k
+
+https://hoidanit.vn/khoa-hoc/react-pro-max-voi-nextjs-lam-chu-toan-dien-reactjs-hien-dai-65198100e6bafa8caad417a6.html
+
+
+trello:
+https://www.youtube.com/playlist?list=PLP6tw4Zpj-RJP2-YrhtkWqObMQ-AA4TDy
+
+
+react - shoo shoe
+https://www.youtube.com/playlist?list=PLncHg6Kn2JT45Gg8eOGiqHv2yFqcBXJrK
+
+Chức Năng Search Youtube' Với React Hook và Google APIs:
+https://www.youtube.com/watch?v=dBKjp_HpiDI
+
+chat Fb
+https://www.youtube.com/playlist?list=PLncHg6Kn2JT6oBfsbNTYHWJNkjF3tNpp4
+
+
+
+Nest.JS với TypeScript/MongoDB
+
+https://hoidanit.vn/khoa-hoc/nestjs-voi-typescript-mongodb-sieu-de-64686ec6fb456bbb90663dd6.html
+
+==
+
+react-native:
+
+https://www.youtube.com/watch?v=dfoZj7DPSAs&t=35s
+
+https://laptrinh-online.vn/course/lap-trinh-react-native
+
+
+https://www.youtube.com/playlist?list=PLWBrqglnjNl12buYHtPhU3wjqk9rAuHhg
+
+
+https://www.youtube.com/watch?v=W1Co2M-gsQE
+
+https://github.com/boyhjsnew/MyShop
+
+https://www.youtube.com/watch?v=LmemCdYL-wA&list=PLncHg6Kn2JT4oRffViQ_qzdAjgriOwRbM
+
+https://www.youtube.com/watch?v=dw_veQsa3ok&list=PLS7HqqjkitavETILUf9PWhfQUzff6N_nC&index=2
+
+https://www.youtube.com/watch?v=bNWKNiek2H8&list=PLfbcZSBklkJgobp7GYGvwXLZIXmTVmEmq
+
+===========
+PWA;
+
+https://www.youtube.com/watch?v=cNaDgJjFfG8&t=239s
+
+https://www.youtube.com/watch?v=IaJqMcOMuDM&t=252s
+
+https://www.youtube.com/watch?v=nNa4KrD3vAY
+
+npm i axios@1.6.8 react-hot-toast@2.4.1 react-icons@5.0.1 react-router-dom@6.22.3 react-transition-group@4.4.5 
+workbox-background-sync@7.0.0 workbox-core@7.0.0 workbox-precaching@7.0.0 workbox-routing@7.0.0 workbox-strategies@7.0.0
+
+npm install -D tailwindcss postcss autoprefixer
+
+
+npm i -D @types/react-transition-group @vite-pwa/assets-generator vite-plugin-pwa
+
+=====
+
+JAVA:
+https://www.youtube.com/playlist?list=PLncHg6Kn2JT5EVkhKoJmzOytHY39Mrf_o
+
+
+
+
+============
+Testing react
+
+https://www.youtube.com/watch?v=T2sv8jXoP4s&list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd
+
+https://www.youtube.com/watch?v=7dTTFW7yACQ&list=PL4cUxeGkcC9gm4_-5UsNmLqMosM-dzuvQ
+
+===
+JEST
+
+https://www.youtube.com/watch?v=T2sv8jXoP4s&list=PLC3y8-rFHvwirqe1KHFCHJ0RqNuN61SJd
+
+
+
+=====
+
+Cypress
+
+https://www.youtube.com/watch?v=u8vMu7viCm8
+
+
+https://www.youtube.com/watch?v=8We-xk9DggA&list=PLBNb67lT6eEKvujga-CwwEjOf5MNYdz6X
+
+https://www.youtube.com/watch?v=eBKYm7F05vY
+
+==
+freelance profile 
+https://www.fiverr.com/massivework/front-end-web-developer
+
+https://www.fiverr.com/faraz__ahmed/convert-psd-to-html-fully-responsive
+
+===
+
+REACT HOOK
+
+https://www.youtube.com/watch?v=9mTgKFjJRXg
+
+https://www.youtube.com/watch?v=6-BfMpTT2PE
+
+==
+Python
+
+
+https://www.youtube.com/watch?v=zLJv37NKSx8
+
+
+
+
+
+
+
+
+======
+install some older version
+
+npm i --legacy-peer-deps
+
+=======
+npm install -g create-react-app
+
+create-react-app hotel_mui
+
+npx create-next-app shoes-store
+
+npx create-next-app@latest movie-pwa
+
+npx create-next-app@latest banking_jms --typescript --tailwind --eslint
+
+npm i react-scripts@5.0.1
+npm i react-router-dom@6.4.3
+npm i react-redux@8.0.5
+npm i @reduxjs/toolkit@1.9.0
+npm i @material-tailwind/react@1.2.4
+npm i @testing-library/jest-dom@5.16.5 @testing-library/react@13.4.0 @testing-library/user-event@14.4.3
+npm i --save-dev autoprefixer@10.4.13
+npm i web-vitals@2.1.4
+
+
+npx create-next-app@13.4.12 lms-demo --typescript --tailwind --eslint
+
+npx create-next-app shoes-store --template redux
+
+npx create-next-app --blank with-redux shoes-store
+
+src vite porject:
+https://gitlab.com/public-starter-projects1/01-nextjs-basic-soundcloud/react-vite-starter
+
+===
+
+AWS
+https://www.youtube.com/watch?v=ILQeF7Z-Sis&list=PL4NoNM0L1m72HCTkOQUiIsHT8LRxdjeKJ
+
+CI/CD:
+github
+https://www.youtube.com/watch?v=-wlilAHXJ6g&list=PLf_Ekmm515S2wpThYIuFKsvoqhzPTYm1O
+jenkins
+https://tedu.com.vn/khoa-hoc/trien-khai-cicd-voi-jenkins-48.html
+
+https://www.youtube.com/watch?v=v7tLaDJ-uqg&list=PLjCpH2Qpki-vDvSxypCxOgfjuVHaXxcaa
+https://www.youtube.com/watch?v=BLD3J25DYEc&list=PLlahAO-uyDzJ7sWdvD_j0eyvbKtf-1quq
+
+
+https://www.youtube.com/watch?v=adpYbOKx7Qc&list=PLEpJ2JwS52iDFkODoPjahyQb65oKqlpaP
+
+Blockchain :
+https://www.youtube.com/watch?v=yXUMvyr6n3Y&list=PLTkdJVCW4t6Ap5F3Bul1kv1ZFeJ4loV7X
+
+https://www.youtube.com/watch?v=--s4VdP3bUM&list=PLFnEYduGTiXGRaMi6MNzP0NkS02diJeL-
+
+https://www.youtube.com/watch?v=OveofuczCuQ&list=PLxW5jnOmXXdwjvlPVReFddB9KU85Va9vh
+
+==
+
+figma:
+
+https://www.youtube.com/channel/UCQHDYtTxB55pqCA5zNtJBXg/videos
+
+https://www.youtube.com/watch?v=K89kcqJtIr8&t=50s
+
+===
+** crash course/
+
+social media:
+
+https://www.youtube.com/watch?v=o080tU3sd0k
+
+
+https://www.youtube.com/watch?v=VsUzmlZfYNg
+
+mui:
+
+https://www.youtube.com/watch?v=KAFtEqo8Xn4
+
+https://www.youtube.com/watch?v=uoJ0Tv-BFcQ
+
+=====
+
+React Query/ tanstack
+
+https://www.youtube.com/watch?v=_W3R2VwRyF4
+ 
+ 
+
+====
+trading//bank
+https://www.youtube.com/watch?v=PuOVqP_cjkE
+
+https://www.youtube.com/watch?v=N_uNKAus0II
+
+
+
+stock
+
+https://www.youtube.com/watch?v=onSKOD3RPo8&list=PLjItgYqIzJ9VOBgwZ82D9kjQ_QtM5R4u5
+
+
+https://www.youtube.com/watch?v=TDn8RhG20nA&list=PLJN4kg0Hkqi2fu6ifNAkw9TLwTOH-e0-K
+
+
+https://www.youtube.com/watch?v=8CSZXXizWWA&list=PL_kr51suci7WkVde-b09G4XHEWQrmzcpJ
+
+
+https://motion-software.com/blog/how-create-stock-portfolio-app-reactjs-firebase
+
+====
+socket.io  
+ -- chat
+ 
+ https://www.youtube.com/watch?v=Ab7sqFML-4E
+ 
+ https://www.youtube.com/watch?v=LD7q0ZgvDs8
+ 
+ https://www.youtube.com/watch?v=HwCqsOis894
+ 
+ https://www.youtube.com/watch?v=DyffqfyWgUE
+ 
+ 
+
+===========================
+LMS:
+https://www.youtube.com/watch?v=Big_aFLmekI
+
+
+----
+Blockchain
+
+https://www.youtube.com/playlist?list=PLFnEYduGTiXGRaMi6MNzP0NkS02diJeL-
+
+=====================
+====
+react + .NET
+finnance:
+https://www.youtube.com/watch?v=XSLm9PHnkxI&list=PL82C6-O4XrHcNJd4ejg8pX5fZaIDZmXyn
+
+
+===
+react + Spring boot
+
+social:
+
+https://www.youtube.com/watch?v=CcBHZ0t2Qwc
+
+https://www.youtube.com/watch?v=VsUzmlZfYNg&t=490s
+
+https://www.youtube.com/watch?v=O5cmLDVTgAs
+
+https://www.youtube.com/watch?v=6kiYhd0wxkc&list=PL7Oro2kvkIzK3eYoOwy4ll-dr_b2Bb-U6
+
+https://www.youtube.com/watch?v=dP4goCkKxlw&list=PLGRDMO4rOGcNLnW1L2vgsExTBg-VPoZHr
+
+===========
+react + php laravel
+
+https://www.youtube.com/watch?v=VrQRa-afCAk
+
+bank:
+https://www.youtube.com/watch?v=M5Ulh1vjyyk
+
+=============
+
+Ecomm:
+
+https://www.youtube.com/watch?v=jA91s96Aghg&list=PL391NzrHDDl-7FVxlxyvKZPO42-JMzF8K&index=6
+
+https://www.youtube.com/watch?v=3JUsg-WsU9o&t=155s
+
+https://www.youtube.com/watch?v=XyCEIHTyDiU
+
+=====
+
+booking service
+
+estates:
+
+https://www.youtube.com/watch?v=eJ3YysWaP_A
+
+========
+
+AI:
+gen Podcast
+https://www.youtube.com/watch?v=zfAb95tJvZQ&t=19s
+
+	
+===
+
+Real time dashboard, drag & frop kanban
+
+https://www.youtube.com/watch?v=6a3Dz8gwjdg
+
+https://www.youtube.com/watch?v=jx5hdo50a2M
+
+====
+Blog
+
+https://www.youtube.com/watch?v=Kkht2mwSL_I
+
+news, GraphQL, stepzen:
+https://www.youtube.com/watch?v=QcEY72FX9go
+
+https://www.youtube.com/watch?v=7DVdVGm7Ht8
+
+https://www.youtube.com/watch?v=ICG-3VcU9wA
+		
+
+=========================
+github course
+https://github.com/Nikhilthadani
+
+
+=========
+deploy 
+
+Vercel:
+
+https://www.youtube.com/watch?v=2HBIzEx6IZA
+
+netlify:
+
+https://www.netlify.com/
+https://www.youtube.com/watch?v=Ey_90l9GaAw
+
+======
+vue:
+https://www.vuemastery.com/courses/vue-for-react-devs-similarities/intro-to-vue-for-react-devs
+
+
+https://www.youtube.com/watch?v=cfiN8lCA3RM
+
+https://www.youtube.com/watch?v=jffKw_NMfnw
+
+https://www.youtube.com/watch?v=qieXC2pfeN0&list=PL8p2I9GklV44m5tFH-zjCmTiHeq9GZrby
+
+==
+
+web3
+
+https://www.youtube.com/watch?v=Y89q6T1r1Yg
+
+========
+scrum / jira
+
+https://www.youtube.com/watch?v=AcRTayCv93w
+
+
+https://www.youtube.com/watch?v=K-jJ3UyhvOo
+
+===========
+
+chart
+
+https://www.youtube.com/watch?v=QA6oTpMZp84
+
+
+===
+realtime
+
+https://www.youtube.com/watch?v=5alEc5KuyKg&t=1s
+
+
+https://www.freecodecamp.org/news/react-websockets-project-build-real-time-order-book-app/
+
+
+
+
+
+
+==========
+
+Redux Toolkit 
+
+==
+generate code
+- react
+rfce
+- react native
+rnfes
+
+===
+- React-router
+npm install react-router-dom
+
+==
+- Cấu hình username, email
+git config --global user.name "oanhvlt"
+
+git config --global user.email "ovu1024@gmail.com" 
+
+git config --list
+====
+- push code:
+
+git init
+git add .
+git commit -m 'update new'
+
+inorge:
+	git remote add origin https://github.com/oanhvlt/Testing.git
+git branch -M main
+
+git push origin main
+git push -u origin main
+====
+git branch -M master
+git push origin master
+git push -u origin master
+
+==
+git pull origin main
+=====
+git checkout -b dev
+
+npx tailwindcss -i ./src/index.css -o ./src/output.css --watch
+==
+clerk
+npm i @clerk/nextjs@4.30.0
+
+========
+- NODEJS
+
+npm init
+
+npm install express@4.17.1 
+body-parser@1.19.0 
+dotenv@8.2.0 
+ejs@3.1.5 : view engine
+
+npm install --save-exact express@4.17.2 dotenv@10.0.0 body-parser@1.19.1 ejs@3.1.6
+
+
+-- trình compiler của nodejs: babel
+
+npm install --save-exact @babel/core@7.15.4 @babel/node@7.15.4 @babel/preset-env@7.15.4 @babel/cli@7.15.4
+
+npm uninstall @babel/core @babel/cli @babel/preset-env @babel/node
+
+-- server tự restart mỗi khi save file
+npm install nodemon@2.0.15
+
+
+- update thư viện
+npm update
+- check thư viện
+npm outdated >> lấy tên version mới nhất để install (nối @version):
+ex:
+npm install --save-exact @babel/core@7.19.3
+
+===
+
+- PROJECT: STEP BY STEP CONFIG
+
+- Create bellow files:
+
+-- .env: cấu hình các tham số môi trường
+	PORT=8080
+	
+-- .env.example: push github
+PORT=
+
+-- .gitignore
+/node_modules
+/vendor
+/.idea
+.idea/
+.env
+
+-- .babelrc: cấu hình compiler
+{
+    "presets": [
+        "@babel/preset-env"
+    ]
+}
+
+========
+To start backend nodels: 
+>> go to package.json >> "scripts", add: "start"
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/server.js"
+  },
+
+
+===========
+Install and Config Sequelize
+
+- Sequelize cli (command line interface) >> cung cấp câu lệnh để thao tác với CSDL
+(guide: 
+https://sequelize.org/docs/v6/getting-started/
+https://mherman.org/blog/node-postgres-sequelize/
+)
+
+-- 	npm install --save-exact sequelize@6.13.0 sequelize-cli@6.3.0
+	
+	- create file: .sequelizerc
+		update content file .sequelizerc: initial path of 4 components will be generated ( migrations, models, seeders, config.json)
+	
+			const path = require('path');
+			module.exports = {
+				'config': path.resolve('./src/configs', 'config.js'),
+				'migrations-path': path.resolve('./src', 'migrations'),
+				'models-path': path.resolve('./src', 'models'),
+				'seeders-path': path.resolve('./src', 'seeders'),
+			}
+	
+	- npx sequelize-cli init (or: node_modules/.bin/sequelize init) 
+	=> auto generate 3 module ( migrations(empty), models(index.js), seeders(empty)), and file config.json
+	
+======
+Step by step to use sequelize connect Database MySQL manual : use CLI
+
+https://sequelize.org/docs/v6/other-topics/migrations/
+(https://sequelize.org/docs/v7/cli/#creating-the-first-model-and-migration)
+
+
+-step 1. Creating the first Model 
+
+npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string
+
+=> result: auto generate models/user.js, migrations/[radom number]-create-user.js
+
+- Cài package mySQL (or mysql2)
+https://sequelize.org/docs/v6/getting-started/ >> Installing
+
+npm install --save mysql2@2.3.3
+
+- Create a DB in mySQL
+
+- update file .env
+
+	PORT=8080
+	NODE_ENV=development (# default)(OR NODE_ENV=test OR NODE_ENV=production)
+	
+	(environments are initiated from config.json)
+
+-step 2. Running Migrations (initiate table Database)
+
+npx sequelize-cli db:migrate
+
+	migrate only a table:
+	npx sequelize-cli db:migrate --to [name_of_your_migration]
+	ex: npx sequelize-cli db:migrate --to migration-create-user.js
+
+ 
+
+=> result: 1 table user will be generated in Database mySQL (DB initiated in config.json)
+
+-step 3. Creating the first Seed 
+
+npx sequelize-cli seed:generate --name demo-user
+
+=> result: auto generate seeders/[radom number]-demo-user.js
+
+- update content file seeder (update function up: copy from at "Creating the first Seed" in DOC guide )
+	example:
+	return queryInterface.bulkInsert('Users', [{
+      firstName: 'John',
+      lastName: 'Doe',
+      email: 'example@example.com',
+      createdAt: new Date(),
+      updatedAt: new Date()
+    }]);
+
+-step 4. Running Seeds (initiate one or many record in table)
+npx sequelize-cli db:seed:all
+
+=> result: 1 record user will be generated in table users (table users has been created step 2)
+
+
+==
+Connecting to a database: create connect file on project
+
+(guide: https://sequelize.org/docs/v6/getting-started/  >> Connecting to a database)
+
+- C1:
+	-- create file connectDB.js 
+	(copy content on guide: use option 3, copy testing connection)
+
+	const sequelize = new Sequelize('hdit', 'root', null, {
+	  host: 'localhost',
+	  dialect: 'mysql',
+	  "logging": false
+	});
+
+	--- Testing the connection:  copy .authenticate() function in DOC
+	let connectDB = async () => {
+		try {
+			await sequelize.authenticate();
+			console.log('Connection has been established successfully.');
+		  } catch (error) {
+			console.error('Unable to connect to the database:', error);
+		  }
+	}
+
+	-- import connectDB.js into server.js 
+	>> call connectDB();
+
+- C2: use file index.js (models/index.js)
+
+-- go to file models/index.js
+	--- import pakage dotenv to use command process.env 
+	require('dotenv').config();
+
+	--- add Testing the connection variable
+
+	let connectDB = async () => {
+	  try {
+		await sequelize.authenticate();
+		console.log('Connection has been established successfully.');
+	  } catch (error) {
+		console.error('Unable to connect to the database:', error);
+	  }
+	}
+	--- add
+	db.connectDB = connectDB();
+	
+-- go to server.js 
+add:
+	- import db from "./models/index";
+	
+	- db.connectDB;
+
+
+==========
+View data on file view
+
+
+-- go to controllers/homeController.js: import db from "../models/index";
+>> render homepage.ejs and return data = db.User.findAll()
+
+ex:
+let getHomePage = async (req, res) => {
+    try {
+        let data = await db.User.findAll(); //User: khai báo trong models
+
+        return res.render('homepage.ejs', {
+            data: JSON.stringify(data),
+            msg: 'get successfull users'
+        });
+    } catch (e) {
+        console.log(e);
+    }
+}
+-- go to homepage.ejs
+add:
+
+<%=data %>
+
+
+===
+CRUD
+
+- Create new user with hash password
+
+	-- Install hash password
+	npm i --save-exact bcryptjs@2.4.3
+
+
+===
+Creating an instance
+ORM
+https://sequelize.org/docs/v6/core-concepts/model-instances/
+
+https://sequelize.org/docs/v6/core-concepts/model-querying-finders/
+
+
+
+
+
+==
+INSTALL nvm
+
+-1. uninstall nodejs (version using) v14.17.0
+
+-2. install nvm
+https://github.com/coreybutler/nvm-windows/releases
+download nvm-setup.zip
+
+-3. view command nvm
+https://github.com/coreybutler/nvm-windows/blob/1.1.7/README.md
+
+nvm list
+node -v
+
+-4. install nodejs
+https://nodejs.org/en/about/previous-releases
+
+nvm install 14.17.0
+nvm install 16.20.0
+nvm install 18.17.0
+
+nvm install 16.13.1
+
+
+nvm uninstall 16.13.0
+
+
+>> can install more than one version
+
+-5. choose verion use 
+nvm use [full_version_number], 
+ex: 
+nvm use 16.13.1
+
+====
+Vite:
+$ npm create vite@latest
+or:
+$ npm create vite@4.2.0
+https://www.npmjs.com/package/vite
+
+
+npm create vite@latest frontend -- --template react-ts
+
+======
+config Timezone save correct time to DB
+
+>> go to config.js, add:
+
+ "timezone": "+07:00"
+ 
+ 
+config raw = true cho tất cả các result 
+"query": {
+      "raw": true
+},
+	
+====================
+
+Install ReactJs
+v17.0.2
+
+===================
+//strict - origin - when - cross - origin
+
+C1:
+>> use CORS
+
+https://www.npmjs.com/package/cors
+
+- npm install --save cors@2.8.5
+
+c2:
+go to server.js, add:
+
+// Add headers before the routes are defined 
+app.use(function (req, res, next) { //this is midleware
+
+    // Website you wish to allow to connect
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+
+    // Request methods you wish to allow
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+
+    // Request headers you wish to allow
+    res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+
+    // Set to true if you need the website to include cookies in the requests sent
+    // to the API (e.g. in case you use sessions)
+    res.setHeader('Access-Control-Allow-Credentials', true);
+
+    // Pass to next layer of middleware
+    next();
+});
+
+
+=========
+- slick carousel
+npm install --save react-slick@0.28.1
+
+npm i --save slick-carousel@1.8.1
+
+===
+- phóng to ảnh (UserRedux.js)
+
+npm i --save-dev react-image-lightbox@5.1.1
+
+import:
+import Lightbox from 'react-image-lightbox';
+import 'react-image-lightbox/style.css'; 
+
+code:
+  
+{this.state.isOpen === true &&
+	<Lightbox
+		mainSrc={this.state.previewImgUrl}            
+		onCloseRequest={() => this.setState({ isOpen: false })}
+	/>
+}
+
+=======
+-- PUST Notify
+
+npm i react-toastify
+
+step:
+1. initial in "App.js"
+import { ToastContainer } from 'react-toastify';
+>> In return():
+	<ToastContainer position="top-right" autoClose={5000} hideProgressBar={false}
+    newestOnTop={false} closeOnClick rtl={false} pauseOnFocusLoss draggable pauseOnHover theme="light"/>
+
+2. use toast:
+
+ex: adminActions.js
+	import { toast } from "react-toastify";
+	call:
+	toast.success("succeed!");
+	toast.error("failed!");
+
+
+
+===
+
+Queue port has been use in nodejs:
+tcpview.exe
+
+==
+Step by step using redux:
+
+1.Create actions
+
+1.1. Create action types
+ex: add key action type in "actionTypes.js"
+
+	const actionTypes = Object.freeze({
+		//list users
+		FETCH_ALL_USERS_SUCCESS: 'FETCH_ALL_USERS_SUCCESS',
+		FETCH_ALL_USERS_FAILED:'FETCH_ALL_USERS_FAILED',
+		...
+	})
+	export default actionTypes;
+
+1.2. Create action - adminActions.js
+
+ex: add actions in "adminActions.js"
+	//import actiontypes
+	import actionTypes from './actionTypes';
+	//import service
+	import {getAllUsers} from '../../services/userService';
+
+	//admin > manage users
+	export const fetchAllUsersStart = () => {
+		return async(dispatch, getState) => {
+			try {
+				let res = await getAllUsers();
+				if(res && res.errCode === 0){
+					let users = res.users.reverse();//users: res of api getAllUsers from server
+					dispatch(fetchAllUsersSuccess(users)); 
+				}else{
+					dispatch(fetchAllUsersFailed());
+					toast.error("Fecth all users failed!");
+				}
+			} catch (e) {
+				dispatch(fetchAllUsersFailed());
+				toast.error("Fecth all users failed!");
+				console.log('fetchAllUsersFailed error: ', e)
+			}
+		   
+		}
+	  
+	}
+
+	export const fetchAllUsersSuccess = (users) => ({
+		type: actionTypes.FETCH_ALL_USERS_SUCCESS,
+		data: users
+	})
+
+	export const fetchAllUsersFailed = () => ({
+		type: actionTypes.FETCH_ALL_USERS_FAILED
+	})
+
+2. create Reducer to store state into redux (if need to update redux store's state)
+ex: "adminReducer.js
+	import actionTypes from '../actions/actionTypes';
+	
+	const initialState = {
+		users: [],
+	}
+	
+	const adminReducer = (state = initialState, action) => {
+		let copyState = {};
+		switch (action.type) {
+
+			case actionTypes.FETCH_ALL_USERS_SUCCESS:    
+				state.users = action.data;
+				return {
+					...state,
+				}
+			case actionTypes.FETCH_ALL_USERS_FAILED: 
+				state.users = [];
+				return {
+					...state,
+				}
+		
+			default:
+				return state;
+		}
+	}
+	export default adminReducer;
+
+3. fire redux action: 
+ex: "TableManageUser.js"
+
+3.1. map state and action from redux store into react's component
+
+- "mapStateToProps": map Reducer's state has been stored in redux to component 
+ex: store redux: users
+
+	- To use actions in "adminActions.js":
+	import * as actions from "../../../store/actions";
+
+	const mapStateToProps = state => {
+		return {
+			 usersRedux: state.admin.users,
+		};
+	};
+	
+- "mapDispatchToProps": map redux action to component throught "props" by using dispatch 
+
+	const mapDispatchToProps = dispatch => {
+		return {
+			 fetchAllUsersStart: () => dispatch(actions.fetchAllUsersStart()),
+		};
+	};
+	
+- connect redux and react component: 
+export default connect(mapStateToProps, mapDispatchToProps)(TableManageUser);
+
+3.3 call redux state, redux action has been map in handle event (or componentDidMount/ componentDidUpdate)
+	==> react component (TableManageUser.js) will call state, action throught "props" 
+	(this.props.usersRedux, this.props.fetchAllUsersStart())
+
+ex: "TableManageUser.js", in componentDidMount, componentDidUpdate:
+	 componentDidMount(){
+        this.props.fetchAllUsersStart();
+    }
+	
+	 componentDidUpdate(prevProps, prevState, snapshot){
+        if(prevProps.usersRedux !== this.props.usersRedux){
+            this.setState({
+                users: this.props.usersRedux,
+            })
+        } 
+    }
+	==> then, use "this.state.users"
+
+
+============
+- store post detail: 
+
+-- editor tool:
+react-markdown-editor-lite, markdown-it
+
+npm i --save-dev react-markdown-editor-lite@1.3.0
+npm i --save-dev markdown-it@12.1.0
+
+-- react-select
+npm i --save-dev react-select@4.3.1
+
+
+====
+- Use date picker:
+npm i react-flatpickr
+- Format date:
+npm i moment
+
+doc: https://momentjs.com/
+
+- custom component:
+create file DatePicker.js
+create file FormattedDate.js
+
+
+
+===
+LODASH
+- working with array by lodash
+
+npm i --save-dev lodash@4.17.21
+
+==========
+NUMBER FORMAT (CURRENCY)
+npm i react-number-format@4.6.4
+
+=============
+Nodemailer
+
+npm i --save-exact nodemailer@6.6.3
+
+======
+generate token: uuid
+
+npm i --save-exact uuid@8.3.2
+
+
+==================
+LOADING
+
+npm i  --save-exact react-loading-overlay@1.0.1
+
+=======
+run nodejs
+
+>> go to package.json, add to "scripts": 
+ 
+"build": "babel src -d build --copy-files"
+
+-d: tên thư mục output
+--copy-files: copy non-javascript files (css, html,...)
+"build": "node build/server.js"
+ "build": "node build/server.js"
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/server.js",
+    "build-src": "babel src -d build --copy-files",
+    "build": "node build/server.js"
+  },
+
+
+=========
+IDE cloud to code:
+
+https://codesandbox.io/p/sandbox/ppwkk5l6xx
+
+===
+
+https://supabase.com/
+acc:
+ovu1024@gmail.com 
+- O@nh1024
+
+Project;
+ - name: Booking
+ - Database password: O@nh1024Pro
+ 
+=====
+https://vercel.com/signup
+ovu1024@gmail.com 
+
+npm install @mui/material @emotion/react @emotion/styled
+antd:
+https://www.youtube.com/watch?v=SI7lp_qLFV0&list=PL-JTnqZPF5z2qTGwNkYln3m0pA0qfgHFR&index=25
+=======
+
+JEST
+
+
+- Install package:
+npm install --save-dev @types/jest@29.5.11
+npm install --save-dev @testing-library/jest-dom@6.2.0
+npm install --save-dev @testing-library/react@15.0.6
+@14.1.2
+15.0.6
+
+
+npm install --save-dev @testing-library/user-event@14.5.2
+npm install --save-dev jest@29.7.0
+npm install --save-dev jest-environment-jsdom@29.7.0
+npm install --save-dev ts-node@10.9.2
+
+
+
+- Create config file:
+create file: jest.config.ts  (instead of run: npx ts-jest config:init => auto gen jest.config.js)
+	import type { Config } from '@jest/types'
+
+	const baseDir = '<rootDir>/src/app/server_app';
+	const baseTestDir = '<rootDir>/src/test';
+
+	const config: Config.InitialOptions = {
+		preset: 'ts-jest',
+		testEnvironment: 'node',
+		verbose: true,
+		collectCoverage: true,
+		collectCoverageFrom: [
+			`${baseDir}/**/*.ts`
+		],
+		testMatch: [
+			`${baseTestDir}/server_app/**/*test.ts`,
+			`${baseTestDir}/server_app2/**/*test.ts`,
+			`${baseTestDir}/Utils.test.ts`
+		]
+	}
+
+	export default config;
+	
+- update : "package.json"
+
+  "scripts": {
+    "test": "jest"
+  },
+  
+- create tsconfig.json
+	{
+		"compilerOptions": {
+			"esModuleInterop": true,
+			"rootDir": "src",
+			"outDir": "dist",
+			"strict": true,
+			"useUnknownInCatchVariables": false
+		},
+		"include": ["src/**/*"]
+	}

@@ -1,0 +1,46 @@
+-install
+
+npm install -D tailwindcss
+npx tailwindcss init
+
+==> auto generate "tailwind.config.js":
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      fontFamily: {
+        'Inter': ['Inter', 'sans-serif'],
+      },
+    },
+  },
+  plugins: [],
+}
+
+-Add the Tailwind directives to "index.css" and "App.css":
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+- import google font "index.css"
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+- set font for website:
+	In "App.css":
+	
+	@tailwind base;
+	@tailwind components;
+	@tailwind utilities;
+
+	@layer base {
+	  /* html {
+		font-family: "Proxima Nova", system-ui, sans-serif;
+	  } */
+	  body{
+		@apply font-Inter
+	  }
+	}
+	
+-
