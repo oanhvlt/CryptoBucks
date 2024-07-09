@@ -1,7 +1,7 @@
 import { adminRoutes } from "./adminRoutes";
-import { sellerRoutes } from './sellerRoutes';
+import { traderRoutes } from './traderRoutes';
 
 export const privateRoutes = [
 	...adminRoutes,
-	...sellerRoutes
+	...traderRoutes
 ]

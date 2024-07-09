@@ -5,10 +5,11 @@ const Trending = lazy(() => import('../../views/pages/Trending'))
 const Saved = lazy(() => import('../../views/pages/Saved'))
 const CryptoDetails = lazy(() => import('../../components/CryptoDetails'))
 
-export const sellerRoutes = [
+export const traderRoutes = [
 	{
 		path: "/",
 		element: <Crypto />,
+		ability: ['admin', 'trader'],
 		children: [
 			{
 				path: ":coinId",
