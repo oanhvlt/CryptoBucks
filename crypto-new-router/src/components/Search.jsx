@@ -30,8 +30,8 @@ const SearchInput = ({ handleSearch }) => {
     <>
       <form onSubmit={handleSubmit}
         className="w-[100%] relative flex items-center ml-2 font-nunito">
-        <input className="w-full pl-2 rounded bg-gray-200 placeholder:text-gray-100 text-[13px]
-        required outline-0 border border-transparent focus:border-cyan"
+        <input className="w-full pl-2 rounded bg-gray-300 placeholder:text-gray-100 text-[13px]
+        required outline-0 border focus:border-cyan"
           type="text" name="search" placeholder="search here..."
           onChange={handleInput}
           value={searchText}
@@ -42,14 +42,15 @@ const SearchInput = ({ handleSearch }) => {
       </form>
       {
         searchText.length > 0 ? (
-          <ul className="absolute top-7 left-2 w-96 h-96 rounded
-          overflow-x-hidden py-1 bg-[#817f7f] 
-          backdrop-blur-md scrollbar-thin scrollbar-thumb-gray-100 scrollbar-track-gray-200">
+          <ul className="absolute top-7 left-2 right-2 w-96 h-96 rounded
+          overflow-x-hidden py-1 bg-[#3F3F3F] backdrop-blur-md 
+          ">
             {
               searchData ? (
                 searchData.map((item) => (
-                  <li key={item.id} onClick={() => selectCoin(item.id)}>
-                    <div className="flex justify-between ml-4 my-2 text-[13px] cursor-pointer">
+                  <li className="hover:bg-[#817f7f]" key={item.id} onClick={() => selectCoin(item.id)}>
+                    <div className="flex justify-between ml-2 mr-2 py-2 text-[13px] cursor-pointer
+                    ">
                       <div> <span>{item.symbol}</span></div>
                       <div className="w-[70%] flex justify-between ">
                         <span>{item.name}</span>

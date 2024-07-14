@@ -8,19 +8,16 @@ export const CryptoProvider = ({ children }) => {
 	const [searchData, setSearchData] = useState();
 	const [coinSearch, setCoinSearch] = useState("");
 
-	const [coinData, setCoinData] = useState();
 	const [currency, setCurrency] = useState("usd");
 	const [sortBy, setSortBy] = useState("market_cap_desc");
 	const [page, setPage] = useState(1);
+	const [totalItems, setTotalItems] = useState(250);
 	const [perPage, setPerPage] = useState(10);
-	const [totalPages, setTotalPages] = useState(250);
-
-
-
+	const [coinData, setCoinData] = useState();
 	const [error, setError] = useState({ data: "", coinData: "", search: "" });
 
 	const getCoinData = async (coinid) => {
-		setCoinData();
+		//setCoinData();
 		try {
 			const response = await fetch(
 				`https://api.coingecko.com/api/v3/coins/${coinid}?localization=false&tickers=false&market_data=true&community_data=false&developer_data=true&sparkline=false`
@@ -28,7 +25,7 @@ export const CryptoProvider = ({ children }) => {
 			// .then((res) => res.json())
 			// .then((json) => json);
 			const data = await response.json()
-			console.log("CoinData", data);
+			//console.log("CoinData", data);
 			setCoinData(data);
 		} catch (error) {
 			console.log(error);
@@ -36,13 +33,16 @@ export const CryptoProvider = ({ children }) => {
 	};
 
 	const getCryptoData = async () => {
+		//setCryptoData();
+		setTotalItems(250)
 		try {
 			const response = await fetch(
 				`https://api.coingecko.com/api/v3/coins/markets?vs_currency=${currency}&ids=${coinSearch}&order=${sortBy}&per_page=${perPage}&page=${page}&sparkline=false&price_change_percentage=1h%2C24h%2C7d`
 			)
 			const data = await response.json()
-			console.log("getCryptoData: ", data);
+			//console.log("getCryptoData: ", data);
 			setCryptoData(data)
+
 		} catch (error) {
 			console.log(error)
 		}
@@ -54,22 +54,30 @@ export const CryptoProvider = ({ children }) => {
 				`https://api.coingecko.com/api/v3/search?query=${query}`
 			)
 			const data = await response.json()
-			console.log("search: ", data);
+			//console.log("search: ", data);
 			setSearchData(data.coins);
 		} catch (error) {
 			console.log(error)
 		}
 	}
 
+	const resetFunction = () => {
+		setPage(1);
+		setCoinSearch("");
+	};
+
 	useLayoutEffect(() => {
 		getCryptoData();
-	}, [coinSearch, sortBy, currency]);
+	}, [coinSearch, sortBy, currency, page, perPage, sortBy]);
 
 	return (
 		<CryptoContext.Provider
 			value={{
 				cryptoData, error, searchData, setSearchData, getSearchResult, setCoinSearch,
-				setCurrency, setSortBy
+				currency, setCurrency, setSortBy, page, setPage, totalItems, setTotalItems,
+				resetFunction,
+				perPage, setPerPage,
+				coinData, getCoinData
 			}}
 		>
 			{children}

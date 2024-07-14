@@ -1,22 +1,29 @@
 import { Outlet } from "react-router-dom";
-import Navigation from "./Navigation";
-import { CryptoProvider } from "../context/CryptoContext";
+import { useState } from "react";
 import TopBar from "./TopBar";
 import Navbar from "./Navbar";
+import { CryptoProvider } from "../context/CryptoContext";
+import { TrendingProvider } from "../context/TrendingContext";
+import { StorageProvider } from "../context/StorageContext";
 
 const MainLayout = () => {
+	const [showNavbar, setShowNavbar] = useState(false)
+
 	return (
-		<>
-			<CryptoProvider>
-				<main className=" w-full h-full flex flex-col relative text-white">
-					<div className="w-screen h-screen bg-gray-300 fixed -z-10" />
-					<TopBar />
-					{/* <Navigation /> */}
-					<Navbar />
-					<Outlet />
-				</main>
-			</CryptoProvider>
-		</>
+		<CryptoProvider>
+			<TrendingProvider>
+				<StorageProvider>
+					<main className="h-screen bg-gray-300 flex flex-col relative text-white">
+						{/* <div className="w-screen h-screen bg-gray-300 fixed -z-10" /> */}
+						<div className="">
+							<TopBar showNavbar={showNavbar} setShowNavbar={setShowNavbar} />
+							<Navbar showNavbar={showNavbar} setShowNavbar={setShowNavbar} />
+						</div>
+						<Outlet />
+					</main>
+				</StorageProvider>
+			</TrendingProvider>
+		</CryptoProvider>
 	)
 }
 

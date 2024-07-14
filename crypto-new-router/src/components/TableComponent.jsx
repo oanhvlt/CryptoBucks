@@ -1,14 +1,13 @@
-import { Outlet, Link, useNavigate } from "react-router-dom";
 import React, { useContext } from 'react'
-import { CryptoContext } from '../../context/CryptoContext'
-import { StorageContext } from '../../context/StorageContext'
+import { CryptoContext } from '../context/CryptoContext'
 import { CiStar } from "react-icons/ci"
 import { BsPinAngleFill } from "react-icons/bs";
-import { LuRefreshCw } from "react-icons/lu";
+import Pagination from './Pagination';
+import { Link } from 'react-router-dom';
+import { StorageContext } from '../context/StorageContext';
 
 const SaveBtn = ({ data }) => {
 	const { saveCoin, allCoins, removeCoin } = useContext(StorageContext)
-
 	const handleClick = (e) => {
 		e.preventDefault()
 		if (allCoins.includes(data.id)) {
@@ -27,18 +26,12 @@ const SaveBtn = ({ data }) => {
 	)
 }
 
-const Saved = () => {
-	let navigate = useNavigate();
+const TableComponent = () => {
 	let { cryptoData, error, currency } = useContext(CryptoContext)
-	const { savedData, resetSavedResult } = useContext(StorageContext)
-
-	const getCoinDetails = (id) => {
-		navigate(`${id}`);
-	};
 
 	return (
-		<section className="w-[100%] h-full flex flex-col mt-5 mb-24 px-1 relative">
-			{savedData ? (
+		<>
+			{cryptoData ? (
 				<table className="border border-gray-100  w-full table-auto">
 					<thead className="capitalize text-[12px] text-[#aaa] border-b border-gray-100 bg-gray-200">
 						<tr>
@@ -55,7 +48,7 @@ const Saved = () => {
 					</thead>
 					<tbody>
 						{
-							savedData.map((data) => {
+							cryptoData.map((data) => {
 								return (
 									<tr className="text-[12px] border-gray-100 border-b last:border-b-0 
 										hover:bg-gray-200" key={data.id}>
@@ -63,15 +56,22 @@ const Saved = () => {
 											<SaveBtn data={data} />
 										</td>
 										<td className="text-left pl-2 uppercase border-r border-gray-100">
-											<span onClick={() => getCoinDetails(data.id)} className="cursor-pointer">
+											<Link to={`/${data.id}`} className="cursor-pointer">
 												{data.symbol}
-											</span>
+											</Link>
 										</td>
 										<td className="text-left pl-2 border-r border-gray-100">
 											{data.name}
 										</td>
 										<td className="text-right pr-2 border-r border-gray-100">
+											{/* {Number(data.current_price).toLocaleString()} */}
 											{
+												// new Intl.NumberFormat("en-US", {
+												// 	style: "currency",
+												// 	currency: "USD",
+												// 	currencyDisplay: "code",
+												// 	maximumFractionDigits: 0
+												// }).format(data.current_price).replace("USD", "")
 												new Intl.NumberFormat("en-IN", {
 													style: "currency",
 													currency: currency,
@@ -112,20 +112,34 @@ const Saved = () => {
 						}
 					</tbody>
 				</table>
-			) : (
-				<h1 className="min-h-[60vh] text-lg text-cyan flex items-center justify-center ">
+			) : (!error.data && !error.search) ? (
+				<div className="w-full min-h-[50vh] flex justify-center items-center">
+					<div className="w-8 h-8 border-4 border-solid border-cyan rounded-full border-b-gray-200 animate-spin"
+						role="status" />
+					<span className="text-base ml-2">please wait...</span>
+				</div>
+			) : error.data || error.search ? (
+				<h1 className="min-h-[60vh] text-lg text-red flex items-center justify-center ">
 					There is no data to display!
 				</h1>
-			)}
-			{/* <button className="w-[2rem] mr-4 hover:scale-110 transition-all transition-ease
-        absolute right-0 -top-8"
-			//onClick={resetTrendingResult}
-			>
-				<LuRefreshCw color='cyan' size={18} />
-			</button> */}
-			<Outlet />
-		</section>
+			) : null
+			}
+			<div className="flex items-center justify-between mt-4 capitalize h-[25px] text-[13px]">
+				<span>
+					Data provided by{" "}
+					<a
+						className="text-cyan"
+						href="http://www.coingecko.com"
+						rel="noreferrer"
+						target={"_blank"}
+					>
+						CoinGecko
+					</a>
+				</span>
+				<Pagination />
+			</div>
+		</>
 	)
 }
 
-export default Saved
+export default TableComponent

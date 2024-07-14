@@ -1,6 +1,9 @@
-import { lazy } from "react";
-const AdminDashboard = lazy(() => import('../../views/admin/AdminDashboard'))
-const Orders = lazy(() => import('../../views/admin/Orders'))
+// import { lazy } from "react";
+// const AdminDashboard = lazy(() => import('../../views/admin/AdminDashboard'))
+// const Orders = lazy(() => import('../../views/admin/Orders'))
+
+import AdminDashboard from "../../views/admin/AdminDashboard";
+import Orders from "../../views/admin/Orders";
 
 export const adminRoutes = [
 	{

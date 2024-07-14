@@ -6,7 +6,7 @@ import { CryptoContext } from '../context/CryptoContext';
 
 const Filters = () => {
 
-	let { setCurrency, setSortBy } = useContext(CryptoContext)
+	let { setCurrency, setSortBy, resetFunction } = useContext(CryptoContext)
 	const currencyRef = useRef(null);
 
 	const handleCurrencySubmit = (e) => {
@@ -23,7 +23,7 @@ const Filters = () => {
 	}
 
 	return (
-		<div className="w-full h-10 border-2 border-gray-100 rounded-lg
+		<div className="w-full h-8 border-2 bg-gray-200 
     flex items-center justify-between relative text-[13px]">
 			<Search />
 			<div className="flex mr-7">
@@ -36,8 +36,8 @@ const Filters = () => {
 					</label>
 					<input type="text" name="currency" placeholder="usd"
 						ref={currencyRef}
-						className="w-16 pl-2 rounded bg-gray-200 placeholder:text-gray-100 text-[13px] 
-						required outline-0 border border-transparent focus:border-cyan"/>
+						className="w-16 pl-2 rounded bg-gray-300 placeholder:text-gray-100 text-[13px] 
+						required outline-0 border focus:border-cyan"/>
 					<button type="submit" className="ml-1 cursor-pointer">
 						<IoLogOutOutline size={18} />
 					</button>
@@ -45,7 +45,7 @@ const Filters = () => {
 
 				<label className="relative flex justify-center items-center">
 					<span className="font-bold mr-2">sort by: </span>
-					<select name="sortby" className="rounded bg-gray-200 pl-2 pr-10 py-0.5 
+					<select name="sortby" className="rounded bg-gray-300 pl-2 pr-10 py-0.5 
 					capitalize focus:outline-0 text-[13px] "
 					// onClick={handleSort}
 					>
@@ -58,17 +58,10 @@ const Filters = () => {
 						<option value="gecko_desc">gecko desc</option>
 						<option value="gecko_asc">gecko asc</option>
 					</select>
-					{/* <img
-						src={selectIcon}
-						alt="submit"
-						className="w-[12px] h-auto absolute right-1 top-2 pointer-events-none"
-					/> */}
 				</label>
-
-				<button
-					//onClick={resetFunction}
-					className="w-[2rem] ml-4 hover:scale-110 transition-all transition-ease relative">
-					<LuRefreshCw />
+				<button className='ml-4 hover:scale-110 transition-all transition-ease relative'
+					onClick={resetFunction}>
+					<LuRefreshCw color='cyan' size={18} />
 				</button>
 			</div>
 		</div>
